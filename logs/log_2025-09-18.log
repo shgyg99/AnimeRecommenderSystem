@@ -1,0 +1,42 @@
+2025-09-18 11:50:58,680 - INFO - Model training initialized...
+2025-09-18 11:50:58,798 - INFO - Data loaded successfully for Model training..
+2025-09-18 11:50:58,839 - INFO - Successfully read the YAML file
+2025-09-18 11:50:58,840 - INFO - Loaded configuration from config.yaml
+2025-09-18 11:51:08,030 - INFO - Model created successfully....
+2025-09-18 11:51:08,031 - ERROR - 'NoneType' object has no attribute 'save'
+2025-09-18 11:51:08,031 - ERROR - Error in /home/shgyg99/G/animerecommendation/src/model_training.py , line 103 : Error during saving model and weights process
+2025-09-18 11:57:29,537 - INFO - Model training initialized...
+2025-09-18 11:57:37,693 - INFO - Data loaded successfully for Model training..
+2025-09-18 11:57:37,714 - INFO - Successfully read the YAML file
+2025-09-18 11:57:37,714 - INFO - Loaded configuration from config.yaml
+2025-09-18 11:57:37,793 - INFO - Model created successfully....
+2025-09-18 11:57:37,793 - ERROR - 'NoneType' object has no attribute 'save'
+2025-09-18 11:57:37,793 - ERROR - Error in /home/shgyg99/G/animerecommendation/src/model_training.py , line 109 : Error during saving model and weights process
+2025-09-18 11:59:07,609 - INFO - Model training initialized...
+2025-09-18 11:59:07,659 - INFO - Data loaded successfully for Model training..
+2025-09-18 11:59:07,700 - INFO - Successfully read the YAML file
+2025-09-18 11:59:07,700 - INFO - Loaded configuration from config.yaml
+2025-09-18 11:59:15,838 - INFO - Model created successfully....
+2025-09-18 12:00:12,856 - INFO - Model training Completed....
+2025-09-18 12:00:12,856 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-09-18 12:00:12,904 - INFO - Model saved in artifacts/models/model.h5
+2025-09-18 12:00:12,905 - INFO - Extracting weights for user_embedding
+2025-09-18 12:00:12,910 - INFO - Extracting weights for anime_embedding
+2025-09-18 12:00:12,920 - INFO - User and Anime weights saved successfully...
+2025-09-18 12:36:58,440 - INFO - Successfully read the YAML file
+2025-09-18 12:37:08,294 - INFO - Model training and comet ml initialized...
+2025-09-18 12:37:08,417 - INFO - Data loaded successfully for Model training..
+2025-09-18 12:37:08,457 - INFO - Successfully read the YAML file
+2025-09-18 12:37:08,458 - INFO - Loaded configuration from config.yaml
+2025-09-18 12:37:17,967 - INFO - Model created successfully....
+2025-09-18 12:38:22,230 - INFO - Model training Completed....
+2025-09-18 12:38:22,230 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-09-18 12:38:22,307 - INFO - Model saved in artifacts/models/model.h5
+2025-09-18 12:38:22,309 - INFO - Extracting weights for user_embedding
+2025-09-18 12:38:22,316 - INFO - Extracting weights for anime_embedding
+2025-09-18 12:38:22,386 - INFO - User and Anime weights saved successfully...
+2025-09-18 12:39:15,046 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.comet.com', port=443): Read timed out. (read timeout=10)")': /clientlib/status-report/update
+2025-09-18 12:39:39,068 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7355da349d00>: Failed to resolve 'www.comet.com' ([Errno -2] Name or service not known)")': /clientlib/status-report/update
+2025-09-18 12:40:07,084 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7355da34a9c0>: Failed to resolve 'www.comet.com' ([Errno -2] Name or service not known)")': /clientlib/status-report/update
+2025-09-18 12:40:57,163 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7355d85e91c0>: Failed to resolve 'www.comet.com' ([Errno -2] Name or service not known)")': /clientlib/status-report/update
+2025-09-18 12:41:21,185 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7355d85e8a70>: Failed to resolve 'www.comet.com' ([Errno -2] Name or service not known)")': /clientlib/status-report/update

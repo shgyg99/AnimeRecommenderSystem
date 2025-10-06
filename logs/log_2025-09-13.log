@@ -1,0 +1,10 @@
+2025-09-13 18:40:25,529 - INFO - Starting Data Ingestion Process....
+2025-09-13 18:40:25,530 - INFO - Successfully read the YAML file
+2025-09-13 18:40:25,530 - INFO - Data Ingestion started
+2025-09-13 18:40:26,101 - INFO - Large file detected and just saved 5 million rows
+2025-09-13 18:40:41,151 - INFO - Starting Data Ingestion Process....
+2025-09-13 18:40:41,152 - INFO - Successfully read the YAML file
+2025-09-13 18:40:41,152 - INFO - Data Ingestion started
+2025-09-13 18:40:41,703 - INFO - Large file detected and just saved 5 million rows
+2025-09-13 18:40:42,043 - INFO - Large file detected and just saved 5 million rows
+2025-09-13 18:40:52,535 - INFO - Large file detected and just saved 5 million rows
