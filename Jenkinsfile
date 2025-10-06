@@ -9,9 +9,6 @@ pipeline {
         stage("Cloning from Github") {
             steps {
                 script {
-                    echo 'Installing git lfs...'
-                    sh 'git lfs install'
-
                     echo 'Cloning from Github...'
                     checkout([$class: 'GitSCM',
                         branches: [[name: '*/main']],
