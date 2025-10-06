@@ -1,24 +1,37 @@
 pipeline {
     agent any
 
-    stages {
-        stage("Cloning from Github...") {
-            steps {
-                script {
-                    echo 'Cloning from Github...'
+    environment {
+        VENV_DIR = 'venv'
+    }
 
-                    checkout([
-                        $class: 'GitSCM',
-                        branches: [[name: '*/main']],
-                        doGenerateSubmoduleConfigurations: false,
-                        extensions: [
-                            [$class: 'GitLFSPull']  // ← این خط مهمه
-                        ],
-                        userRemoteConfigs: [[
-                            credentialsId: 'github-token',
-                            url: 'https://github.com/shgyg99/AnimeRecommenderSystem.git'
-                        ]]
-                    ])
+    stages{
+        stage("Cloning from Github..."){
+            steps{
+                script{
+                    echo 'Cloning from Github...'
+                    sh '''
+                    git lfs install
+                    '''
+                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-token', url: 'https://github.com/shgyg99/AnimeRecommenderSystem.git']])
+                    sh '''
+                    git lfs pull
+                    '''
+                }
+            }
+        }
+    }
+    stages{
+        stage("Making a virtual environment..."){
+            steps{
+                script{
+                    echo 'Making a virtual environment...'
+                    sh '''
+                    python3 -m venv ${VENV_DIR}
+                    . ${VENV_DIR}/bin/activate
+                    pip install --upgrade pip
+                    pip install -e .
+                    '''
                 }
             }
         }
