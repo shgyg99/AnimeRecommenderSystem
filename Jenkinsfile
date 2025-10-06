@@ -1,12 +1,24 @@
 pipeline {
     agent any
 
-    stages{
-        stage("Cloning from Github..."){
-            steps{
-                script{
+    stages {
+        stage("Cloning from Github...") {
+            steps {
+                script {
                     echo 'Cloning from Github...'
-                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-token', url: 'https://github.com/shgyg99/AnimeRecommenderSystem.git']])
+
+                    checkout([
+                        $class: 'GitSCM',
+                        branches: [[name: '*/main']],
+                        doGenerateSubmoduleConfigurations: false,
+                        extensions: [
+                            [$class: 'GitLFSPull']  // ← این خط مهمه
+                        ],
+                        userRemoteConfigs: [[
+                            credentialsId: 'github-token',
+                            url: 'https://github.com/shgyg99/AnimeRecommenderSystem.git'
+                        ]]
+                    ])
                 }
             }
         }
