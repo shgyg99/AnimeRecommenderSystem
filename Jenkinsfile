@@ -9,11 +9,17 @@ pipeline {
         stage("Cloning from Github..."){
             steps{
                 script{
-                    echo 'Cloning from Github...'
+                    echo 'Installing git lfs...'
                     sh '''
                     git lfs install
                     '''
+                }
+                script{
+                    echo 'Cloning from Github...'
                     checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-token', url: 'https://github.com/shgyg99/AnimeRecommenderSystem.git']])
+                }
+                script{
+                    echo 'pulling lfs'
                     sh '''
                     git lfs pull
                     '''
