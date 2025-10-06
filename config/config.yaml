@@ -1,0 +1,17 @@
+data_ingestion:
+  bucket_path: "data"
+  bucket_file_names:
+    - "anime.csv"
+    - "anime_with_synopsis.csv"
+    - "animelist.csv"
+
+
+
+model:
+  embedding_size : 128
+  loss : binary_crossentropy
+  optimizer : Adam
+  metrics : ["mse", "mae"]
+  
+
+comet-ml : "rxgvMVa4n2C9PsGpSTZg0xD70"

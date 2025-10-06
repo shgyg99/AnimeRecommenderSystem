@@ -1,0 +1,8 @@
+venv
+.env
+*venv
+MLOPS_PROJECT_1.egg-info
+tester.py
+data/
+logs/
+artifacts/
